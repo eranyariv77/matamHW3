@@ -1,0 +1,51 @@
+* commit e7d8b4b44519c103b18708d058d64269fa9186e7
+| Author: Eran Yariv <eranyariv77@gmail.com>
+| Date:   Thu Jan 1 22:00:39 2026 +0200
+| 
+|     update code
+| 
+|  SortedList.h    | 175 +++++++++++++++++++++++++++++++++++++++++++++++++++++-
+|  TaskManager.cpp |  98 ++++++++++++++++++++++++++++++
+|  TaskManager.h   |  12 ++--
+|  3 files changed, 280 insertions(+), 5 deletions(-)
+| 
+* commit dbd4ad0df89daeccb6528615d74e5ff30d84c08c
+| Author: Amit Zlatkin <amit.zlatkin@campus.technion.ac.il>
+| Date:   Sun Nov 23 20:48:52 2025 +0200
+| 
+|     Update course website link in README
+|     
+|     Updated course website link for assignment instructions.
+| 
+|  README.md | 3 ++-
+|  1 file changed, 2 insertions(+), 1 deletion(-)
+| 
+* commit ebb9fc09ff533a819b528f0a66d73a6fd453475b
+| Author: AdiHarif <adi.harif@campus.technion.ac.il>
+| Date:   Mon Jul 15 20:55:03 2024 +0300
+| 
+|     Adds supplied files
+| 
+|  Person.cpp           |  51 +++++
+|  Person.h             |  79 ++++++++
+|  SortedList.h         |  57 ++++++
+|  Task.cpp             |  83 ++++++++
+|  Task.h               | 115 +++++++++++
+|  TaskManager.h        |  75 +++++++
+|  main.cpp             | 531 +++++++++++++++++++++++++++++++++++++++++++++++++
+|  tests/test1.expected |   3 +
+|  tests/test2.expected |   3 +
+|  tests/test3.expected |  30 +++
+|  tests/test4.expected |   3 +
+|  tests/test5.expected |   3 +
+|  tests/test6.expected |  15 ++
+|  13 files changed, 1048 insertions(+)
+| 
+* commit 1d686955fb829e5ecd8af0a69edce35628cc5d8d
+  Author: AdiHarif <adi.harif@campus.technion.ac.il>
+  Date:   Mon Jul 15 20:53:59 2024 +0300
+  
+      Initial Commit - Adds README file
+  
+   README.md | 7 +++++++
+   1 file changed, 7 insertions(+)
