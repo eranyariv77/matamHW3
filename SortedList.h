@@ -79,15 +79,15 @@ namespace mtm {
 
     void insert(T element){
         Node *newNode = new Node(element);
-        if (head == nullptr) {
-        head = newNode;
+        if(head == nullptr){
+            head = newNode;
         }else{
             SortedList<T>::ConstIterator it = this->begin();
             for(;it != this->end() && !(element > *it); ++it){
             }
             if(it.index == nullptr){
                 SortedList<T>::ConstIterator tail = this->begin();
-                for(;tail.index->next != nullptr && !(element > *tail); ++tail){
+                for(;tail.index->next != nullptr; ++tail){
                 }
                 newNode->prev = tail.index;
                 tail.index->next = newNode;
@@ -106,17 +106,19 @@ namespace mtm {
     }
 
     void remove(const SortedList<T>::ConstIterator it){
-        if (!it.index) {
+        if(!it.index){
             return;
         }
         if(it.index == head){
             head = it.index->next;
-            it.index->next->prev = nullptr;
+            if(head != nullptr){
+                head->prev = nullptr;
+            }
         }else if(it.index->next == nullptr){
             it.index->prev->next = nullptr;
         }else{
-        it.index->prev->next = it.index->next;
-        it.index->next->prev = it.index->prev;
+            it.index->prev->next = it.index->next;
+            it.index->next->prev = it.index->prev;
         }
         delete it.index;
     }
